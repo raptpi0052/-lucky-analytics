@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111827">
+  <title>Lucky Analytics</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="container">
+    <h1>📊 Lucky Analytics</h1>
+
+    <div class="warning">
+      ⚠️ Analyse historique uniquement — aucun résultat futur n’est garanti.
+    </div>
+
+    <section class="card">
+      <h2>Ajouter un coefficient</h2>
+
+      <div class="input-row">
+        <input id="coefficient" type="number" step="0.01" min="1" placeholder="Ex. 2.35">
+        <button id="addBtn">Ajouter</button>
+      </div>
+    </section>
+
+    <section class="stats-grid">
+      <div class="stat">
+        <span>Dernier</span>
+        <strong id="last">—</strong>
+      </div>
+
+      <div class="stat">
+        <span>Moyenne</span>
+        <strong id="mean">—</strong>
+      </div>
+
+      <div class="stat">
+        <span>Médiane</span>
+        <strong id="median">—</strong>
+      </div>
+
+      <div class="stat">
+        <span>Volatilité</span>
+        <strong id="volatility">—</strong>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Distribution</h2>
+      <div id="distribution"></div>
+    </section>
+
+    <section class="card">
+      <h2>Série actuelle</h2>
+      <div id="streak">—</div>
+    </section>
+
+    <section class="card">
+      <h2>50 derniers résultats</h2>
+      <div id="results"></div>
+    </section>
+
+    <section class="card">
+      <h2>Données</h2>
+      <button id="exportBtn">Exporter CSV</button>
+      <label class="file-button">
+        Importer CSV
+        <input id="importFile" type="file" accept=".csv">
+      </label>
+      <button id="clearBtn" class="danger">Effacer les données</button>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
