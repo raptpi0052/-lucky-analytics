@@ -1,0 +1,10 @@
+{
+  "name": "Lucky Analytics",
+  "short_name": "Lucky Analytics",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f2f2f7",
+  "theme_color": "#111827",
+  "description": "Analyse statistique historique des coefficients.",
+  "icons": []
+}
